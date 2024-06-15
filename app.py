@@ -12,7 +12,7 @@ CORS(app)
 # Load the chatbot model
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('dura_qsnAnsering-main\intents.json', 'r') as json_data:
+with open('dura_qsnAnsering-main/intents.json', 'r') as json_data:
     intents = json.load(json_data)
 
 FILE = "data.pth"
